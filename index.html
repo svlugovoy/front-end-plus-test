@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test FE+</title>
+    <link rel="stylesheet" href="app/css/main.css">
+</head>
+<body>
+
+<button id="getList">Show items</button>
+<button id="clearList">Clear LS</button>
+<button id="reloadPage">Reload Page</button>
+<hr>
+
+<div class="container">
+    <div id="products_wrapper">
+
+        <div class="item pattern" id="item_pattern">
+            <h4 class="title"></h4>
+            <p class="id"></p>
+        </div>
+
+    </div>
+</div>
+
+<!-- add script tags here -->
+
+<script src="node_modules/systemjs/dist/system.js"></script>
+<script>
+    System.config({
+        meta: {
+            format: 'cjs'
+        }
+    });
+    System.import('app/js/app.js');
+</script>
+
+</body>
+</html>

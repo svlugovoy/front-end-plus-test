@@ -1,0 +1,9 @@
+.item {
+    border: 1px solid silver;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.pattern {
+    display: none;
+}
